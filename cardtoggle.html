@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>toggle button</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Poppins:20');
+    body{
+        background-image: url('back3.jpeg');
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        font-family: 'poppins', sans-serif; 
+    }
+    body {
+        height: 100%;
+        width: 100%;
+        background-size: 100%;
+        
+    }
+    .card{
+        opacity: 1;
+        position: relative;
+        width: 300px;
+        height: 400px;
+        background: #262626;
+        overflow: hidden;
+        border-radius: 12px;
+    }
+    input,
+    .toggle{
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        bottom: 20px;
+        right: 20px;
+        outline: none;
+        z-index: 10;
+    }
+    .thumb{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    bottom: 07px;
+    left: 20px;
+    outline: none;
+    z-index: 11;
+    }
+    .thumbd{
+position: absolute;
+width: 40px;
+height: 40px;
+bottom: -1px;
+left: 58px;
+outline: none;
+z-index: 11;
+    }
+    input{
+        opacity: 0;
+    }
+    .toggle{
+        pointer-events: none;
+        border-radius: 50%;
+        background:  #fff;
+        transition: 0.5s;
+        text-align: center;
+        line-height: 50px;
+        font-size: 36px;
+        box-shadow: 0 0 0 0px #41fd79 ;
+    }
+input:checked ~ .toggle{
+box-shadow: 0 0 0 500px #8e4b71;
+    transform: rotate(225deg);
+
+}
+.imgBx,
+.details{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;    
+}
+.details{
+    padding: 20px;
+    box-sizing: border-box;
+    z-index: 11;
+    pointer-events: none;
+    transition: 0.5s;
+    opacity: 0;
+}
+input:checked ~ .details{
+    opacity: 1;
+    transition: 0.5s;
+}
+.details h2{
+    margin-bottom: 5px;
+    color: #e6e0da;
+    font-size: 27px;
+    text-align: left;
+}
+.details p{
+    margin-bottom: 5px;
+    color: #f5b994;
+    text-indent: 700;
+    padding: 0;
+}
+h1{
+    color: cornsilk;
+    font-size: 32px;
+    position: absolute;
+    top: -8px; 
+    text-decoration: underline;
+    text-indent: 900;
+}
+h3{
+color: rgb(233, 219, 162);
+font-size: 19px;
+position: absolute;
+bottom: -1px;
+text-decoration: none;
+text-indent: 700;
+}
+a{
+    text-decoration: none;
+    color: #f1a270;
+}
+
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body> <h1>HacK-TecH</h1>
+    <div class="card">
+        <input type="checkbox" name="">
+        <div class="thumb"><a href="Like"><i class="fa fa-thumbs-up" style="font-size:30px;color: rgba(9, 255, 9, 0.774)"></i></a></div>
+        <div class="thumbd"><a href="Dislike"><i class="fa fa-thumbs-down" style="font-size:30px;color: rgba(253, 155, 8, 0.877)"></i></a></div>
+        <div class="toggle">+</div>
+        <div class="imgBx">
+            <img src="img2.jpg" height="100%" width="100%">
+        </div>
+        <div class="details">
+           <h2><b><u>Delta Image</b></u> ©</h2>
+            <p>Look at this amazing picture !! I always inspired by @ <u><b>milesofcolor</b></u> , He is a very creative, see the feed of colourful
+            image. He is only playing with colours and always edit new types of concept and, I just tried image like teal blue and
+            orange tone, and without any background changing, i just changed colour theme of photo.We captured this picture in
+            afternoon time, In between 3pm to 5pm. That was amazing view with Automn tree leaf on the road, you seeing in image. In
+            this image sunlight is coming in left of the object with 45 to 60 degree.</p>
+        </div>
+    </div>
+    <h3> Made by <a href="https://www.instagram.com/h.a.r.s.h__07/" target="_blank">Harsh Dave</a> & <a href="https://www.instagram.com/__chiraggg/" target="_blank">Chirag Chande !</a> </h3>
+</body>
+</html>
